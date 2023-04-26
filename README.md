@@ -22,3 +22,5 @@ Redux hook:
 Use of Redux Persist:
     to persist all the data even after the app is refreshed 
     it stores all the data in internal memory
+
+Added a file(_redirects) inside public folder in order to prevent netlify broken page error 404
