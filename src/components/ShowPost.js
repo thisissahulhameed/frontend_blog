@@ -46,7 +46,8 @@ export default function ShowPost({ path }) {
         }
       })
       .catch((err) => console.log(err));
-  }, [path, posts]);
+  }, [_id,token,path, posts]);
+  // change made here _id , token are extra added in depend arr
 
   const isLiked = (id, post) => {
     return id in post;

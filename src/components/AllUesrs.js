@@ -42,7 +42,8 @@ const Users = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, [path]);
+  }, [_id,token,path]);
+  // change made here _id,token are extra added in dep arr
 
   const isFriend = (friendId) => {
     return friends.find((id) => id === friendId);
